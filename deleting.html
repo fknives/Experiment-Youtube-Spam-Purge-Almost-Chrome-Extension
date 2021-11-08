@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deleting comments!</title>
+  <script type="text/javascript" src="deleting.js"></script>
+  <link rel="stylesheet" href="deleting.css">
+</head>
+
+<body body style="background-color:#35363A;">
+  <div align="center">
+    <div style="max-width: 35%; margin-top: 48px;">
+      <span id="search_description"></span>
+      <div class="loader" id="first-request-loading"></div>
+      <div class="progress"> <!-- progress bar while loading threads  and filtering comments -->
+        <p id="number_of_comment_threads"></p>
+        <div class="progress-bar" id="progress-bar-comments">
+          <div class="progressbar-background"></div>
+          <div class="progress-number" id="progress-number-comments">100%</div>
+          <div class="progressbar-progress" id="progress-moving-comments"></div>
+          <div class="progressbar-progress-cut" id="progress-cut-comments"></div>
+          <div class="progressbar-progress" id="progress-second-half-comments"></div>
+        </div>
+        <p id="comments_to_be_deleted"></p>
+
+        <button id="show_sample_cta" class="infoButton">Show Sample</button>
+        <button id="delete_all_cta" class="actionButton">Delete All</button>
+        <div id="comment_sample_placeholder"></div> <!-- sample comments will be added here -->
+
+        <div class="progress-bar" id="progress-bar-delete"> <!-- progress bar while deleting the comments -->
+          <div class="progressbar-background"></div>
+          <div class="progress-number" id="progress-number-delete">100%</div>
+          <div class="progressbar-progress" id="progress-moving-delete"></div>
+          <div class="progressbar-progress-cut" id="progress-cut-delete"></div>
+          <div class="progressbar-progress" id="progress-second-half-delete"></div>
+        </div>
+        
+        <p id="comments_deleted_so_far"></p>
+        <p id="couldnt_delete_comments_so_far"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

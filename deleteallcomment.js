@@ -1,0 +1,1 @@
+chrome.runtime.sendMessage({tokenWithUrl: location.href}); // just give the data to the background js

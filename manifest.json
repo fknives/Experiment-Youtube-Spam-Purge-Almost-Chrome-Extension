@@ -1,0 +1,23 @@
+{
+  "name": "Youtube Spam Purge!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [{
+    "css": ["content-styles.css"],
+    "js": ["content.js","clientid.js"],
+    "matches": ["https://www.youtube.com/watch?v=*"]
+  },
+  {
+    "js": ["deleteallcomment.js"],
+    "matches": ["https://www.youtube.com/deleteallcomments"]
+}]
+}
