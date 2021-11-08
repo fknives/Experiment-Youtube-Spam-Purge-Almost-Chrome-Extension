@@ -19,5 +19,5 @@
   {
     "js": ["deleteallcomment.js"],
     "matches": ["https://www.youtube.com/deleteallcomments"]
-}]
+  }]
 }

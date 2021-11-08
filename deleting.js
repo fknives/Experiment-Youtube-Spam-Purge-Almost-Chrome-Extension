@@ -20,10 +20,10 @@ var commentsToDelete = []
 var isSampleShown = false
 
 chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
-    document.getElementById(SEARCH_DESCRIPTION_ID).innerHTML = "Searching through the comments of the following video: <a href=\"https://www.youtube.com/watch?v=" + response.videoUrl + "\">video link (" + response.videoUrl + ")</a> by the following user: <a href=\"https://www.youtube.com/channel/" + response.toDeleteUserId + "\">user profile (" + response.toDeleteUserId + ")</a>"
     youtubeToken = response.youtubetoken;
     toDeleteUserId = response.toDeleteUserId;
     videoId = response.videoId;
+    document.getElementById(SEARCH_DESCRIPTION_ID).innerHTML = "Searching through the comments of the following video: <a href=\"https://www.youtube.com/watch?v=" + videoId + "\">video link (" + videoId + ")</a> by the following user: <a href=\"https://www.youtube.com/channel/" + toDeleteUserId + "\">user profile (" + toDeleteUserId + ")</a>"
 
     runFindCommentThreadsRequest("", 0)
 });
