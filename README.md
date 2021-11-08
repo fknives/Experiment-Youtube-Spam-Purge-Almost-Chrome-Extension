@@ -1,4 +1,4 @@
-# Youtube-Spam-Purge-Almost-Chrome-Extension
+# Youtube Spam Purge almost ChromeExtension
 An Open-Source Not published Chrome extension to delete all of a user's comment from a video
 
 ## Inspiration
@@ -72,4 +72,4 @@ If you wish to expand on the idea, the code or publish this extension or a reall
 
 ## Article
 
-<include article here>
+I've written an article about how this project was created, feel free to check out if you are interested [here](https://fnives.medium.com/inspired-youtube-spam-purge-almost-chrome-extension-c1b760fa8415).
